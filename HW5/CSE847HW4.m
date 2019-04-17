@@ -148,10 +148,9 @@ function CSE847HW4()
     end
 
     sample_data = randn(1000, 3);
-    % [idx, c] = cust_kmeans(sample_data, 5, .001);
-    % [idx, c] = kmeans(sample_data, 5);
-    % disp('regular k-means centers');
-    % disp(c);
+    [idx, c] = cust_kmeans(sample_data, 5, .001);
+    disp('regular k-means centers');
+    disp(c);
     % X = sample_data;
     % threed_plot_stuff(X, c, idx);
     
